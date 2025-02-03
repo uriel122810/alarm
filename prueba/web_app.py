@@ -5,6 +5,7 @@ import paho.mqtt.client as mqtt
 MQTT_BROKER = "test.mosquitto.org"
 MQTT_PORT = 1883
 MQTT_TOPIC = "alarma/estado"
+app = Flask(__name__, static_folder='static')
 
 # Inicializar Flask
 app = Flask(__name__)
