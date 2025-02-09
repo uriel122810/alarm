@@ -41,7 +41,7 @@ services:
       metrics:
         cpu:
           percent: 75
-    http_port: 8080
+    http_port: 5050
     health_check:
       initial_delay_seconds: 5
       period_seconds: 10
@@ -49,8 +49,8 @@ services:
       success_threshold: 2
       failure_threshold: 3
       http_path: /api
-      port: 8080
-    internal_ports: [8080, 80]
+      port: 5050
+    internal_ports: [5050, 50]
     alerts:
       - rule: CPU_UTILIZATION
         disabled: false
@@ -317,7 +317,7 @@ ingress:
       redirect:
         uri: /developers
         authority: alarm.com
-        port: 8080
+        port: 5050
         scheme: https
         redirect_code: 302
       cors:
