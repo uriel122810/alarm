@@ -1,7 +1,5 @@
 const express = require('express');
 const app = express();
-const port = 5000;
-
 // Simulación de estado de la alarma
 let alarmState = "desactivada";  // Puedes cambiar este valor dinámicamente según lo que necesites
 
@@ -11,6 +9,8 @@ app.get('/getAlarmState', (req, res) => {
 });
 
 // Iniciar el servidor
-app.listen(port, () => {
-    console.log(`Servidor en http://localhost:${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
+
