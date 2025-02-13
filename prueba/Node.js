@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 5000;
 
 // Simulación de estado de la alarma
 let alarmState = "desactivada";  // Puedes cambiar este valor dinámicamente según lo que necesites
