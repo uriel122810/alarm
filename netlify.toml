@@ -1,4 +1,6 @@
 [build]
-command = "pyenv install 3.10 && pyenv global 3.10 && pip install -r requirements.txt"
+  command = "pip install -r requirements.txt"
+  publish = "."
+
 [build.environment]
   PYTHON_VERSION = "3.10"
