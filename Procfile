@@ -1,1 +1,1 @@
-web: gunicorn --config gunicorn_config.txt prueba.web_app:app
+web: gunicorn --config gunicorn_config.py prueba.web_app:app
