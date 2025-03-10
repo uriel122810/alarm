@@ -1,0 +1,1 @@
+web: gunicorn --config gunicorn_config.txt prueba.web_app:app
